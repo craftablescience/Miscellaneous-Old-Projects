@@ -1,3 +1,5 @@
+# Created on October 3, 2016
+
 import speech_recognition as sr
 import pyttsx
 import time
@@ -32,8 +34,6 @@ functions = ["no",
              "run command",
              "get milestones",
              "take picture"]
-
-milestones = {"3/10/2016":"steve comes out of alpha, version = 0.3.24"}
 
 trans = False
 if transcribe == "yes":
