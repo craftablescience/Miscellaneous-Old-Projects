@@ -14,7 +14,7 @@ def listen():
         print("*listening")
         return r.listen(source)
 
-options = open("C:/Users/belew/Documents/steve/options.txt")
+options = open("options.txt")
 name = options.readline()[5:-1].lower()
 transcribe = options.readline()[11:-1].lower()
 img_name = options.readline()[11:-1]
@@ -33,14 +33,14 @@ functions = ["no",
              "get milestones",
              "take picture"]
 
-milestones = {"3/10/2016":"steve comes out of alpha, version = 0.3.24"} # format = ( MM / DD / YYYY )
+milestones = {"3/10/2016":"steve comes out of alpha, version = 0.3.24"}
 
 trans = False
 if transcribe == "yes":
     trans = True
 
 if trans:
-    trans_file = open("C:/Users/belew/Documents/steve/transcription.txt", 'a')
+    trans_file = open("transcription.txt", 'a')
     trans_file.write("-*-*-*-*-*-*-*-*-*-\n")
 
 try:
